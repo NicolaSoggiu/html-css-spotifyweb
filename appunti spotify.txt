@@ -1,0 +1,20 @@
+SPOTIFY
+
+barra sotto sempre visibile;
+mai barra di scorrimento ne verticale ne orizzontale;
+tutto fisso tranne il contenitore centrale che ha la barra di scrool (tipo esercizio di zoom)
+e il contenitore centrale parte da sopra dove c'è la barra trasparente, infatti la scrool bar va dall'inizio fino alla fine del contenuto centrale senza andare sopra la barra finale del player;
+
+l'header sopra è fissato ma è trasparente;
+
+per far funzionare l'overflow nella sezione centrale serve un altezza fissa;
+
+usare vh per le altezze (es. se la barra del player in basso sarà 5rem, le sezioni sopra cioè quella laterale e il body saranno 100hv - 5rem);
+
+anche la barra laterale avrà una larghezza fissa che poi cambierà con i vari responsive;
+
+barra sotto da fare con z-index;
+barra sopra fixed; (trasparente);
+
+
+per le larghezze usare il 100%;
