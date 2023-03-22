@@ -200,4 +200,51 @@ li {
     height: 3rem;
     background-color: #282828;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* player left */
+
+.player-left {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.player-left img {
+    width: 10%;
+    padding-right: .5rem;
+}
+
+.player-left-text > h6 {
+    color: white;
+}
+
+.player-left-text > span {
+    font-size: .7rem;
+    color: grey;
+}
+
+.fa-heart, .fa-folder {
+    color: grey;
+    padding-left: 1rem;
+}
+
+/* player center */
+
+.player-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-center-top {
+    display: flex;
+    color: grey;
+    font-size: .5rem;
+}
+
+.player-center-top > .fa-solid {
+    font-size: 1rem;
 }
