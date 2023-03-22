@@ -234,7 +234,7 @@ li {
 
 /* player center */
 
-.player-center {
+/* .player-center {
     display: flex;
     flex-direction: column;
 }
@@ -247,4 +247,4 @@ li {
 
 .player-center-top > .fa-solid {
     font-size: 1rem;
-}
+} */
