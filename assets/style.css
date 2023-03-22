@@ -10,7 +10,7 @@
 /* main */
 
 .content {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 3rem);
     background-color: black;
     width: 100%;
 }
@@ -34,7 +34,7 @@
 .btn-upgrade > a {
     text-decoration: none;
     color: white;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     padding: .5rem;
     padding-inline: 1.5rem;
     border: 2px solid white;
@@ -50,13 +50,65 @@
 }
 
 .central .left, .central .right {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 3rem);
 }
+
+/* left */
 
 .central .left {
     background-color: black;
     width: 15%;
+    display: flex;
+    flex-direction: column;
+    color: grey;
 }
+
+.central .left > * {
+    padding-left: 1rem;
+}
+
+.central .left > h4 {
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.central .left > span{
+    padding-bottom: .5rem;
+    font-size: .7rem;
+}
+
+.central .left img {
+    width: 80%;
+    padding: 1rem;
+    padding-bottom: 1.2rem;
+}
+
+.central .left .left-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+.fa-solid {
+    font-size: 1rem;
+    padding-right: .5rem;
+}
+
+.fa-square-plus {
+    font-size: 2rem;
+}
+
+.central .left .side-hr {
+    width: 80%;
+    margin-inline: 1rem;
+}
+
+.left .row-end {
+    margin-top: 7rem;
+}
+
+/* right */
 
 .central .right {
     background-color: #141922;
@@ -130,7 +182,7 @@
 /* player menu */
 
 .player-menu {
-    height: 5rem;
+    height: 3rem;
     background-color: #282828;
     width: 100%;
 }
