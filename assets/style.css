@@ -15,11 +15,16 @@
     width: 100%;
 }
 
+li {
+    padding-right: 1rem;
+}
+
+
 /* nav */
 
 .content nav {
     background-color: #080B12;
-    opacity: 0.8;
+    opacity: 0.6;
     width: 85%;
     height: 4rem;
     position: fixed;
@@ -102,10 +107,16 @@
 .central .left .side-hr {
     width: 80%;
     margin-inline: 1rem;
+    margin-bottom: .5rem;
 }
 
 .left .row-end {
-    margin-top: 7rem;
+    margin-top: 6rem;
+    font-size: .8rem;
+}
+
+.fa-circle-user, .fa-circle-down {
+    padding-right: .5rem;
 }
 
 /* right */
@@ -134,17 +145,21 @@
 
 /* prima linea */
 
-.central .right .first-row, .second-row {
+.central .right .first-row, .double-row {
     display: flex;
     padding-left: 1rem;
     padding-right: 1.5rem;
 }
 
-.right .first-row .card img, .second-row .card img{
+.right .first-row .card img, .double-row .card img{
     width: 90%;
 }
 
-.first-row .card, .second-row .card {
+.circle {
+    border-radius: 50%;
+}
+
+.first-row .card, .double-row .card {
     width: calc(100% / 6);
     display: flex;
     flex-direction: column;
@@ -167,7 +182,7 @@
     padding-inline: .5rem;
 }
 
-/* seconda linea */
+/* seconda e terza linea */
 
 .right .create-for {
     color: grey;
@@ -175,7 +190,7 @@
     font-size: .8rem;
 }
 
-.right .second-row {
+.right .double-row {
     padding-top: 1rem;
 }
 
