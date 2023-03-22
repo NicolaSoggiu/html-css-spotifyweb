@@ -4,4 +4,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gotham', sans-serif;
+}
+
+/* main */
+
+.content {
+    height: calc(100vh - 5rem);
+    background-color: black;
+    width: 100%;
+}
+
+/* nav */
+
+.content nav {
+    background-color: #080B12;
+    opacity: 0.2;
+    width: 85%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn-upgrade > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 2rem;
+    padding: .5rem;
+    padding-inline: 2rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #080B12;
+}
+
+/* central */
+
+.central{
+    display: flex;
+}
+
+.central .left, .central .right {
+    height: calc(100vh - 5rem);
+}
+
+.central .left {
+    background-color: black;
+    width: 15%;
+}
+
+.central .right {
+    background-color: #141922;
+    width: 85%;
+    color: white;
+    overflow-y: auto;
+    padding-top: 6rem;
+}
+
+/* player menu */
+
+.player-menu {
+    height: 5rem;
+    background-color: #282828;
+    width: 100%;
 }
