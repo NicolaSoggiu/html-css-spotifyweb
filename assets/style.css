@@ -19,7 +19,7 @@
 
 .content nav {
     background-color: #080B12;
-    opacity: 0.2;
+    opacity: 0.8;
     width: 85%;
     height: 4rem;
     position: fixed;
@@ -36,10 +36,11 @@
     color: white;
     margin-right: 2rem;
     padding: .5rem;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
     border: 2px solid white;
     border-radius: 20px;
     background-color: #080B12;
+    font-size: .8rem;
 }
 
 /* central */
