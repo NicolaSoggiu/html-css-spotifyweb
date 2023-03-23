@@ -20,12 +20,17 @@ li {
 }
 
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* nav */
 
 .content nav {
     background-color: rgba( 0, 0, 0, 0.3);
     opacity: 0.6;
-    width: 85%;
+    width: 100%;
     height: 4rem;
     position: fixed;
     top: 0;
@@ -62,15 +67,39 @@ li {
 
 .central .left {
     background-color: black;
-    width: 15%;
+    width: 230px;
     display: flex;
     flex-direction: column;
     color: grey;
     justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+    .central .left {
+        width: 50px;
+    }
+}
+
 .central .left > * {
     padding-left: 1rem;
+}
+
+@media screen and (max-width:600px) {
+    .central h4{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .left-row span, .playlist-name span, .row-end span {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .left-row i {
+        display: none;
+    }
 }
 
 .central .left .first-section  > h4 {
@@ -90,6 +119,25 @@ li {
     padding-left: 0;
 }
 
+.small-logo{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .small-logo{
+        display: block;
+        width: 80%;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo-left {
+        display: none;
+    }
+}
+
 .fa-square-plus {
     padding-top: .5rem;
 }
@@ -100,21 +148,43 @@ li {
     align-items: center;
 }
 
+.left-row > a {
+    color: grey;
+}
+
+.home {
+    color: white;
+}
+
 .playlist-text {
     padding-top: .5rem;
+    color: grey;
 }
 
 .playlist-name {
     padding-top: .5rem
 }
 
+.playlist-name > a {
+    padding-bottom: .5rem;
+    color: grey;
+}
+
 .fa-square-plus {
     padding-right: .5rem;
+    color: grey;
 }
 
 .central .left .left-row img {
     width: 10%;
     padding-right: .2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .central .left .left-row img {
+        width: 80%;
+        padding-top: 0;
+    }
 }
 
 .fa-square-plus {
@@ -127,9 +197,24 @@ li {
     margin-top: .5rem;
 }
 
+@media screen and (max-width: 600px) {
+    .side-hr{
+    display: none;
+    }
+}
+
 .fa-circle-user, .fa-circle-down {
     padding-right: .5rem;
 }
+
+@media screen and (max-width:600px){
+    .fa-circle-down {
+        margin-bottom: 1rem;
+        width: 80%;
+        padding-left: .5rem;
+    }
+}
+
 
 .user {
     border: 1px solid white;
@@ -141,6 +226,10 @@ li {
     font-size: .8rem;
 }
 
+.row-end > a {
+    color: grey;
+}
+
 .left-row .john {
     color: white;
     padding-left: .2rem;
@@ -150,19 +239,34 @@ li {
 
 .central .right {
     background-color: #141922;
-    width: 85%;
+    width: 100%;
     color: white;
     overflow-y: auto;
     padding-top: 5rem;
 }
 
+@media screen and (max-width: 600px) {
+    .central .right{
+        width: calc(100% - 50px);
+}
+}
 .central .right .right-menu{
     display: flex;
     list-style: none;
     justify-content: center;
     font-size: 0.8rem;
+    color: grey;
     padding-inline: .5rem;
 }
+
+@media screen and (max-width: 600px) {
+    .central .right .right-menu {
+        flex-wrap: wrap;
+        font-size: .7rem;
+        gap: 1.5rem
+    }
+}
+
 
 .central .right > h3 {
     padding-left: 1.5rem;
@@ -178,6 +282,12 @@ li {
     padding-right: 1.5rem;
 }
 
+@media screen and (max-width: 600px){
+    .central .right .first-row {
+        flex-wrap: wrap;
+    }
+}
+
 .right .first-row .card img, .double-row .card img{
     width: 90%;
 }
@@ -191,6 +301,15 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 600px){
+    .first-row .card, .double-row .card{
+        width: calc(100% / 2);
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        padding-bottom: .5rem;
+    }
 }
 
 .card > h5 {
@@ -245,9 +364,21 @@ li {
     width: calc(100% / 3);
 }
 
+@media screen and (max-width: 600px){
+    .player-left {
+        width: 35%;
+    }
+}
+
 .player-menu .player-left img {
     width: 10%;
     padding-right: .5rem;
+}
+
+@media screen and (max-width: 600px){
+    .player-menu .player-left img {
+        width: 20%;
+    }
 }
 
 .player-left .player-left-text > h6 {
@@ -259,18 +390,30 @@ li {
     color: grey;
 }
 
+@media screen and (max-width: 600px) {
+    .player-left-text {
+        width: 20%;
+        font-size: .8rem;
+    }
+}
+
 .fa-heart, .fa-folder {
     color: grey;
     padding-left: 1rem;
 }
 
+@media screen and (max-width: 600px){
+    .left-icon {
+        display: flex;
+        flex-direction: column;
+        font-size: .7rem;
+        gap: .2rem;
+    }
+}
+
 .playlist-name {
     display: flex;
     flex-direction: column;
-}
-
-.row-end {
-
 }
 
 /* player center */
@@ -300,7 +443,6 @@ li {
 .player-center-top .btn-play {
     padding: .5rem;
     font-size: 1.2rem;
-    padding-right: 1rem;
 }
 
 /* center down */
@@ -325,10 +467,37 @@ li {
     width: 100px;
 }
 
+@media screen and (max-width: 600px) {
+    .player-center-down .btn-white{
+    width: 50px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .white{
+    width: 50px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .grey{
+    width: 30px;
+    }
+}
+
 .player-center-down .btn-grey {
     width: 200px;
     background-color: grey;
 }
+
+@media screen and (max-width: 600px) {
+    .player-center-down .btn-grey{
+    width: 30px;
+    }
+}
+
 
 .minute {
     padding-top: .2rem;
@@ -344,6 +513,13 @@ li {
     width: calc(100% / 3);
     padding-right: .5rem;
 }
+
+@media screen and (max-width: 600px) {
+    .player-right{
+    width: 30%;
+    }
+}
+
 
 .player-right > i {
     font-size: .8rem;
