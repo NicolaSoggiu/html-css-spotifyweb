@@ -66,17 +66,16 @@ li {
     display: flex;
     flex-direction: column;
     color: grey;
-    position: relative;
+    justify-content: space-between;
 }
 
 .central .left > * {
     padding-left: 1rem;
 }
 
-.central .left > h4 {
+.central .left .first-section  > h4 {
     color: white;
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .central .left > span{
@@ -88,11 +87,25 @@ li {
     width: 80%;
     padding: 1rem;
     padding-bottom: 1.2rem;
+    padding-left: 0;
+}
+
+.fa-square-plus {
+    padding-top: .5rem;
 }
 
 .central .left .left-row {
     display: flex;
     padding-bottom: .5rem;
+    align-items: center;
+}
+
+.playlist-text {
+    padding-top: .5rem;
+}
+
+.playlist-name {
+    padding-top: .5rem
 }
 
 .fa-square-plus {
@@ -118,15 +131,6 @@ li {
     padding-right: .5rem;
 }
 
-.row-end {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
 .user {
     border: 1px solid white;
     border-radius: 50%;
@@ -135,6 +139,11 @@ li {
 
 .fa-circle-down {
     font-size: .8rem;
+}
+
+.left-row .john {
+    color: white;
+    padding-left: .2rem;
 }
 
 /* right */
@@ -255,6 +264,15 @@ li {
     padding-left: 1rem;
 }
 
+.playlist-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-end {
+
+}
+
 /* player center */
 
 .player-center {
@@ -270,6 +288,7 @@ li {
     display: flex;
     color: white;
     font-size: .5rem;
+    padding-top: .2rem;
 }
 
 .player-center-top > .fa-solid {
@@ -291,6 +310,7 @@ li {
     color: white;
     font-size: .5rem;
     padding-top: .5rem;
+    align-items: center;
 }
 
 .player-center-down .white {
@@ -308,6 +328,10 @@ li {
 .player-center-down .btn-grey {
     width: 200px;
     background-color: grey;
+}
+
+.minute {
+    padding-top: .2rem;
 }
 
 /* player right  */
