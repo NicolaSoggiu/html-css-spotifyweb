@@ -16,5 +16,7 @@ anche la barra laterale avrà una larghezza fissa che poi cambierà con i vari r
 barra sotto da fare con z-index;
 barra sopra fixed; (trasparente);
 
+barra laterale lunghezza 230px e 50px ristretta
+
 
 per le larghezze usare il 100%;
