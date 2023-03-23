@@ -282,6 +282,10 @@ a {
     padding-bottom: 1rem;
 }
 
+.right .right-menu  a  {
+    color: grey;
+}
+
 /* prima linea */
 
 .central .right .first-row, .double-row {
@@ -417,6 +421,10 @@ a {
     color: grey;
 }
 
+.name-song {
+    color: grey;
+}
+
 @media screen and (max-width: 600px) {
     .player-left-text {
         width: 20%;
@@ -457,8 +465,9 @@ a {
 .player-menu .player-center-top {
     display: flex;
     color: white;
-    font-size: .5rem;
+    font-size: 1rem;
     padding-top: .2rem;
+    gap: 1rem;
 }
 
 .player-center-top > .fa-solid {
@@ -547,10 +556,13 @@ a {
     }
 }
 
-
 .player-right > i {
     font-size: .8rem;
     padding-right: .5rem;
+}
+
+.player-right > a {
+    padding-right: 1rem;
 }
 
 .player-right .btn-white {
