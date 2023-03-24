@@ -30,7 +30,7 @@ a {
 .content nav {
     background-color: rgba( 0, 0, 0, 0.3);
     opacity: 0.6;
-    width: calc(100% - 193px);
+    width: 100%;
     height: 4rem;
     position: fixed;
     top: 0;
@@ -53,13 +53,13 @@ a {
     font-size: .8rem;
 }
 
-.btn-upgrade :hover{
+.btn-upgrade :hover {
     font-size: 1rem;
 }
 
 /* CENTRAL */
 
-.central{
+.central {
     display: flex;
 }
 
@@ -88,7 +88,7 @@ a {
     padding-top: 1rem;
 }
 
-.central .left > span{
+.central .left > span {
     padding-bottom: .5rem;
     font-size: .7rem;
 }
@@ -100,7 +100,7 @@ a {
     padding-left: 0;
 }
 
-.left .small-logo{
+.left .small-logo {
     display: none;
 }
 
@@ -121,7 +121,8 @@ a {
 
 .fa-square-plus {
     padding-top: .5rem;
-    font-size: 1rem;
+    font-size: 2rem;
+    color: grey;
 }
 
 .playlist-row:hover * {
@@ -137,7 +138,7 @@ a {
     color: grey;
 }
 
-.playlist-text:hover{
+.playlist-text:hover {
     color: white;
 }
 
@@ -150,14 +151,6 @@ a {
 .playlist-name > a {
     padding-bottom: .5rem;
     color: grey;
-}
-
-.fa-square-plus {
-    font-size: 2rem;
-    color: grey;
-}
-
-.playlist-name > a {
     max-width: max-content;
 }
 
@@ -194,7 +187,7 @@ a {
     color: grey;
 }
 
-.row-end > a:hover{
+.row-end > a:hover {
     color: white;
 }
 
@@ -232,7 +225,7 @@ a {
 }
 
 
-.central .right .right-menu{
+.central .right .right-menu {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -241,7 +234,7 @@ a {
     padding-inline: .5rem;
 }
 
-.central .right .right-menu a:hover{
+.central .right .right-menu a:hover {
     color: white;
     cursor: pointer
 }
@@ -269,7 +262,7 @@ a {
     width: 30px;
     height: 2px;
     border-radius: 10px;
-    top: 15px;
+    top: 17px;
     left: 27px;
 }
 
@@ -283,7 +276,7 @@ a {
     gap: 1rem
 }
 
-.right .first-row .card .img img, .double-row .card img{
+.right .first-row .card .img img, .double-row .card img {
     width: 100%;
 }
 
@@ -404,7 +397,7 @@ a {
     padding-left: 1rem;
 }
 
-.fa-heart:hover, .fa-folder:hover{
+.fa-heart:hover, .fa-folder:hover {
     color: white;
 }
 
@@ -481,7 +474,7 @@ a {
     background-color: grey;
 }
 
-.minute-start{
+.minute-start {
     padding-right: .5rem;
 }
 
@@ -545,12 +538,14 @@ a {
 /* CENTRAL RIGHT */
 
 @media screen and (max-width: 600px) {
-    .central .right{
+
+    .central .right {
         width: calc(100% - 50px);
 }
 }
 
 @media screen and (max-width: 600px) {
+
     .central .right .right-menu {
         flex-wrap: wrap;
         font-size: .7rem;
@@ -558,8 +553,9 @@ a {
     }
 }
 
-@media screen and (max-width: 700px){
-    .first-row .card, .double-row .card{
+@media screen and (max-width: 700px) {
+
+    .first-row .card, .double-row .card {
         flex-basis: calc((100% - (5 * 1rem)) / 2);
         flex-grow: 1;
         flex-wrap: wrap;
@@ -567,7 +563,8 @@ a {
     }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
+
     .first-row .card, .double-row .card{
         flex-basis: calc((100% - (5 * 1rem)) / 4);
         flex-shrink: 0;
@@ -577,6 +574,7 @@ a {
 }
 
 @media screen and (max-width: 1100px) {
+
     .central .right .right-menu {
         flex-wrap: wrap;
         font-size: .7rem;
@@ -584,14 +582,16 @@ a {
     }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
+
     .central .right .first-row {
         flex-wrap: wrap;
     }
 }
 
-@media screen and (min-width: 1100px){
-    .first-row .card, .double-row .card{
+@media screen and (min-width: 1100px) {
+
+    .first-row .card, .double-row .card {
         flex-basis: calc((100% - (5 * 1rem)) / 6);
         flex-shrink: 0;
         flex-wrap: wrap;
@@ -602,30 +602,35 @@ a {
 /* CENTRAL LEFT */
 
 @media screen and (max-width: 600px) {
+
     .central .left {
         width: 50px;
     }
 }
 
 @media screen and (max-width:600px) {
+
     .central h4{
         display: none;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+
     .left-row span, .playlist-name span, .row-end span {
         display: none;
     }
 }
 
 @media screen and (max-width:600px) {
+
     .left-row i {
         display: none;
     }
 }
 
 @media screen and (max-width: 600px) {
+
     .small-logo{
         display: block;
         width: 80%;
@@ -635,12 +640,14 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+
     .logo-left {
         display: none;
     }
 }
 
 @media screen and (max-width: 600px) {
+
     .central .left .left-row img {
         width: 80%;
         padding-top: 0;
@@ -648,12 +655,14 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-    .side-hr{
+
+    .side-hr {
     display: none;
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
+
     .fa-circle-down {
         margin-bottom: 1rem;
         width: 80%;
@@ -665,13 +674,15 @@ a {
 
 /* PLAYER-MENU LEFT */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+
     .player-left {
         width: 35%;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+
     .player-menu .player-left img {
         width: 20%;
     }
@@ -684,7 +695,8 @@ a {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+
     .left-icon {
         display: flex;
         flex-direction: column;
@@ -696,25 +708,29 @@ a {
 /* PLAYER-MENU CENTER */
 
 @media screen and (max-width: 600px) {
-    .player-center-down .white{
+
+    .player-center-down .white {
     width: 30px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .player-center-down .grey{
+
+    .player-center-down .grey {
     width: 50px;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .player-center-down .grey{
+
+    .player-center-down .grey {
     width: 100px;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .player-center-down .white{
+
+    .player-center-down .white {
     width: 50px;
     }
 }
@@ -723,7 +739,7 @@ a {
 /* PLAYER-MENU RIGHT */
 
 @media screen and (max-width: 600px) {
-    .player-right{
+    .player-right {
     width: 20%;
     }
 }
