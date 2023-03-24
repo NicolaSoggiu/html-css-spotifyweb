@@ -211,9 +211,6 @@ a {
 
 .home-row {
     position: relative;
-}
-
-.home-row > a {
     max-width: max-content;
 }
 
