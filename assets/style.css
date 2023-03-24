@@ -213,6 +213,10 @@ a {
     position: relative;
 }
 
+.home-row > a {
+    max-width: max-content;
+}
+
 .home-row::before {
     content: "";
     background-color: yellowgreen;
