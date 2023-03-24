@@ -258,19 +258,19 @@ a {
 
 /* BONUS */
 
-.right-menu:first-child {
+.bonus-bar {
     position: relative;
 }
 
-.right-menu:first-child::after {
+.bonus-bar::after {
     content: "";
     background-color: yellowgreen;
     position: absolute;
     width: 30px;
     height: 2px;
     border-radius: 10px;
-    top: 20px;
-    left: 265px;
+    top: 15px;
+    left: 27px;
 }
 
 
