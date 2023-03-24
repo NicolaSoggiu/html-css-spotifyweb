@@ -238,6 +238,11 @@ a {
     align-items: center;
 }
 
+.circle {
+    border-radius: 50%;
+}
+
+
 .card > h5 {
     text-align: center;
     padding-top: .5rem;
@@ -261,14 +266,17 @@ a {
 
 .card .img i {
     position: absolute;
+    display: none;
+    font-size: 4rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.circle {
-    border-radius: 50%;
+.card .img i:hover {
+    display: block;
 }
+
 
 /* SECOND/THIRD ROW */
 
