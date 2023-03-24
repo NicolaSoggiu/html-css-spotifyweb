@@ -421,26 +421,41 @@ a {
 }
 
 .player-center-down .white {
-    padding-left: .5rem;
+    width: 100px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: white;
     position: relative;
 }
 
-.player-center-down .btn-white {
-    width: 100px;
+.player-center-down .white:hover {
+    background-color: yellowgreen;
+    cursor: pointer;  
+}
+
+.player-center-down .white:hover .bar-circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    right: -.2rem;
+    bottom: -.2rem;
 }
 
 .player-center-down .grey {
-    padding-right: .5rem;
-}
-
-
-.player-center-down .btn-grey {
     width: 200px;
+    height: 2px;
+    border-radius: 10px;
     background-color: grey;
 }
 
-.minute {
-    padding-top: .2rem;
+.minute-start{
+    padding-right: .5rem;
+}
+
+.minute-end {
+    padding-left: .5rem;
 }
 
 /* PLAYER RIGHT  */
@@ -465,13 +480,33 @@ a {
 
 .player-right .btn-white {
     width: 20px;
-    margin-bottom: .5rem;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.player-right .btn-white:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.player-right .btn-white:hover .bar-circle{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+    right: -.2rem;
+    bottom: -.3rem;
+
 }
 
 .player-right .btn-grey {
     width: 60px;
+    height: 2px;
     background-color: grey;
-    margin-bottom: .5rem;
+    border-radius: 10px;
 }
 
 /* MEDIA QUERY  */
@@ -630,39 +665,25 @@ a {
 /* PLAYER-MENU CENTER */
 
 @media screen and (max-width: 600px) {
-    .player-center-down .btn-white{
-    width: 50px;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .white{
-    width: 50px;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .grey{
+    .player-center-down .white{
     width: 30px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .player-center-down .btn-grey{
-    width: 30px;
+    .player-center-down .grey{
+    width: 50px;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .player-center-down .btn-grey{
+    .player-center-down .grey{
     width: 100px;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .player-center-down .btn-white{
+    .player-center-down .white{
     width: 50px;
     }
 }
@@ -672,6 +693,6 @@ a {
 
 @media screen and (max-width: 600px) {
     .player-right{
-    width: 30%;
+    width: 20%;
     }
 }
