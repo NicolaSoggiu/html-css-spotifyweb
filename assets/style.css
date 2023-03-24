@@ -53,6 +53,10 @@ a {
     font-size: .8rem;
 }
 
+.btn-upgrade :hover{
+    font-size: 1rem;
+}
+
 /* CENTRAL */
 
 .central{
@@ -111,10 +115,17 @@ a {
     max-width: max-content;
 }
 
+.left-row > a:hover {
+    color: white;
+}
 
 .fa-square-plus {
     padding-top: .5rem;
     font-size: 1rem;
+}
+
+.fa-square-plus:hover{
+    color: white;
 }
 
 .home {
@@ -124,6 +135,10 @@ a {
 .playlist-text {
     padding-top: .5rem;
     color: grey;
+}
+
+.playlist-text:hover{
+    color: white;
 }
 
 .playlist-name {
@@ -183,6 +198,10 @@ a {
     color: grey;
 }
 
+.row-end > a:hover{
+    color: white;
+}
+
 .left-row .john {
     color: white;
     padding-left: .2rem;
@@ -207,6 +226,12 @@ a {
     color: grey;
     padding-inline: .5rem;
 }
+
+.central .right .right-menu a:hover{
+    color: white;
+    cursor: pointer
+}
+
 
 .central .right > h3 {
     padding-left: 1rem;
@@ -264,7 +289,11 @@ a {
     position: relative;
 }
 
-.card .img i {
+.card .img:hover img {
+    opacity: 0.5;
+}
+
+.card .img .img-hover {
     position: absolute;
     display: none;
     font-size: 4rem;
@@ -273,8 +302,10 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.card .img i:hover {
+.card .img:hover .img-hover {
     display: block;
+    cursor: pointer;
+    opacity: 1;
 }
 
 
@@ -332,9 +363,18 @@ a {
     color: grey;
 }
 
+.player-left .player-left-text .name-song:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .fa-heart, .fa-folder {
     color: grey;
     padding-left: 1rem;
+}
+
+.fa-heart:hover, .fa-folder:hover{
+    color: white;
 }
 
 /* PLAYER-CENTER */
@@ -363,8 +403,11 @@ a {
 }
 
 .player-center-top .btn-play {
-    padding: .5rem;
     font-size: 1.2rem;
+}
+
+.player-center-top .btn-play:hover{
+    font-size: 1.3rem;
 }
 
 /* CENTER-DOWN */
@@ -379,15 +422,17 @@ a {
 
 .player-center-down .white {
     padding-left: .5rem;
+    position: relative;
+}
+
+.player-center-down .btn-white {
+    width: 100px;
 }
 
 .player-center-down .grey {
     padding-right: .5rem;
 }
 
-.player-center-down .btn-white {
-    width: 100px;
-}
 
 .player-center-down .btn-grey {
     width: 200px;
